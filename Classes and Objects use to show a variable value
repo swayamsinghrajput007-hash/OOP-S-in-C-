@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class a
+{
+    int x;
+    public:
+    a()
+    {
+        x=100;
+    }
+    void disp()
+    {
+        cout<<"Value for x: "<<x;
+    }
+};
+int main()
+{
+    a obj;
+    obj.disp();
+}
