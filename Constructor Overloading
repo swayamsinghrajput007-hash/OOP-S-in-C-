@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class a
+{
+    int x;
+    public:
+    a()
+    {
+        x=100;
+    }
+    void disp()
+    {
+        cout<<"\nThe value of x: "<<x;
+    }
+    a(int y)
+    {
+        x=y;
+    }
+    void disp1()
+    {
+         cout<<"\nThe value of x: "<<x;
+    }
+    a(int y,int z)
+    {
+        x=y+z;
+    }
+    void disp2()
+    {
+         cout<<"\nThe value of x: "<<x;
+    }
+};
+int main()
+{
+    a obj;
+    a obj1(123);
+    a obj2(10,20);
+    obj.disp();
+    obj1.disp1();
+    obj2.disp2();
+}
