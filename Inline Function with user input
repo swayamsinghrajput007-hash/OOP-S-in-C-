@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+inline int max(int x)
+{
+    return x*x;
+}
+int main()
+{
+    int y;
+    cout<<"\nEnter which number's square: ";
+    cin>>y;
+    cout<<"\nSquare : "<<max(y);
+}
+
