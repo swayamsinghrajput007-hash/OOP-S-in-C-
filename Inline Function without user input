@@ -1,0 +1,19 @@
+1.	
+#include<iostream>
+using namespace std;
+inline int  max(int x,int y)
+{
+    if(x>y)
+    {
+        return x;
+    }
+    else
+    {
+        return y;
+    }
+};
+int main()
+{
+    cout<<"Larger among 5 and 4 is: "<<max(5,4);
+    cout<<"\nLarger among 10 and 20 is: "<<max(10,20);
+}
