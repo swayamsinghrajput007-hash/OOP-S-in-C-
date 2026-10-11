@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class a
+{
+    int password;
+    public:
+   a()
+    {
+        password=10;
+    }
+    void disp(a obj)
+    {
+        cout<<"Password shown through object as parameter: "<<obj.password;
+    }
+};
+int main()
+{
+    a obj;
+    obj.disp(obj);
+}
