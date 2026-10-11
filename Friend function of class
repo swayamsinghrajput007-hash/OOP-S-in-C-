@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class a
+{
+    int x;
+
+    public:
+    a()
+    {
+        x = 100;
+    }
+
+    friend class b;
+};
+
+class b
+{
+    public:
+    void disp(a obj)
+    {
+        cout << "Value of x: " << obj.x;
+    }
+};
+
+int main()
+{
+    a obj1;
+    b obj2;
+
+    obj2.disp(obj1);
+
+    return 0;
+}
