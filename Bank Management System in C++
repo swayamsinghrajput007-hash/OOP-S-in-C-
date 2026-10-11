@@ -1,0 +1,54 @@
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+class BankAccount
+{
+public:
+    int acc_num, amount, with;
+    string acc_name;
+    float balance = 0;
+
+    void deposit()
+    {
+        cout << "Enter value to deposit: ";
+        cin >> amount;
+
+        if(amount > 0)
+            balance = balance + amount;
+        else
+            cout << "Invalid deposit amount\n";
+    }
+
+    void withdraw()
+    {
+        cout << "Enter value to withdraw: ";
+        cin >> with;
+
+        if(with > 0 && with <= balance)
+        {
+            balance = balance - with;
+        }
+        else
+        {
+            cout << "Insufficient balance or invalid amount\n";
+        }
+    }
+
+    void disp()
+    {
+        cout << "Total balance: " << balance << endl;
+    }
+};
+
+int main()
+{
+    BankAccount obj;
+
+    obj.deposit();
+    obj.withdraw();
+    obj.disp();
+
+    return 0;
+}
