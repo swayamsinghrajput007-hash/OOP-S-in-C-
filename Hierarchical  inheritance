@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class a
+{
+    int x=100;
+    public:
+    void disp()
+    {
+        cout<<"\nvalue for x: "<<x;
+    }
+};
+class b:public a
+{
+    int y=200;
+    public:
+    void see()
+    {
+        cout<<"\nValue for y: "<<y;
+    }
+};
+class c:public a
+{
+    int z=300;
+    public:
+    void show()
+    {
+        cout<<"\nValue for z: "<<z;
+    }
+};
+int main()
+{
+    c obj;
+    obj.disp();
+    obj.show();
+    b obj1;
+    obj1.see();
+}
