@@ -1,0 +1,41 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+int main()
+{
+    int guess,num;
+    cout<<"\nEnter number to guess: ";
+    cin>>guess;
+    srand(time(0));
+    num=rand()%10+1;
+    if(num==guess)
+    {
+        cout<<"\nCorrectly guessed";
+        return 0;
+    }
+     else
+                {
+                    cout<<"\nWrong guess";
+                }
+    while(num!=guess)
+        {
+             cout<<"\nEnter number to guess: ";
+             cin>>guess;
+             if(num==guess)
+                {
+                cout<<"\nCorrectly guessed";
+                return 0;
+                }
+            else
+                {
+                    cout<<"\nWrong guess";
+                }
+        }
+    if(num==guess)
+    {
+        cout<<"\nCorrectly guessed";
+        return 0;
+    }
+}
+
