@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+
+class a
+{
+    public:
+    int x=100;
+
+    void disp()
+    {
+        cout<<"\nValue for x: "<<x;
+    }
+};
+
+class b: virtual public a
+{
+    public:
+    int y=200;
+
+    void see()
+    {
+        cout<<"\nValue for y: "<<y;
+    }
+};
+
+class c: virtual public a
+{
+    public:
+    int z=300;
+
+    void show()
+    {
+        cout<<"\nValue for z: "<<z;
+    }
+};
+
+class d: public b, public c
+{
+    public:
+    int w=400;
+
+    void display()
+    {
+        cout<<"\nValue for w: "<<w;
+    }
+};
+
+int main()
+{
+    d obj;
+
+    obj.disp();
+    obj.see();
+    obj.show();
+    obj.display();
+
+    return 0;
+}
+
