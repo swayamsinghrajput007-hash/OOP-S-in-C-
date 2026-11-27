@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+template<class x>
+void add(x a,x b)
+{
+    cout<<"Addition: "<<a+b;
+}
+int main()
+{
+    add(10.1,20.2);
+}
